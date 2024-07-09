@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content vertically */
+  padding: 20px;
+  margin: 0;
+  text-align: center; /* Center the text */
+  box-shadow: 0 10px 15px -3px rgba(33,150,243,.4), 0 4px 6px -4px rgba(33,150,243,.4);
+  border-radius: 8px;
+  background: #181A1B; /* Dark background color */
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-container {
+  text-align: center; /* Center the text */
+  color: #fff; /* Set text color to white */
+  margin-bottom: 20px; /* Space between text and the app-bitcoin component */
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.bit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+

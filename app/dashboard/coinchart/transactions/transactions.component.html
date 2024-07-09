@@ -1,0 +1,26 @@
+<div class="transactions-container">
+  <div class="title">Transaction</div>
+  <div class="header">
+    <mat-form-field appearance="fill" class="filter-dropdown">
+      <mat-label>Filter</mat-label>
+      <mat-select [(value)]="filter" (selectionChange)="updateFilteredTransactions()">
+        <mat-option value="week">Week</mat-option>
+        <mat-option value="month">Month</mat-option>
+        <mat-option value="all">All</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="transactions-list">
+    <div *ngFor="let transaction of filteredTransactions" class="transaction">
+      <img [src]="transaction.image" alt="{{ transaction.name }}" class="icon">
+      <div class="details">
+        <span class="coin">{{ transaction.name }}</span>
+        <span class="type">{{ transaction.type }}</span>
+        <span class="time">{{ transaction.date | date: 'shortTime' }}</span>
+      </div>
+      <span class="amount" [ngStyle]="{'color': transaction.type === 'buy' ? 'green' : 'red'}">
+        {{ transaction.type === 'buy' ? '+' : '' }}{{ transaction.amount }} {{ transaction.coin }}
+      </span>
+    </div>
+  </div>
+</div>

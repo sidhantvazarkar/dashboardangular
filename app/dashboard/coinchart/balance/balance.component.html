@@ -1,0 +1,33 @@
+<div class="balance-card" *ngIf="coinData">
+  <div class="balance-header">
+    <h1>Total Balance</h1>
+    <h2>$50000</h2>
+
+    <div class="exchange-rates">
+      <p><span>Exchange</span></p>
+      <span>1 {{coinData.symbol | uppercase}} = <span class="title"> </span> <span class="value">{{coinData.market_data.current_price.inr | currency: currency}}</span></span>
+    </div>
+  </div>
+  <div class="balance-exchange">
+    <div class="exchange-form">
+      <div class="exchange-item">
+        <label>You Sell</label>
+        <div class="img-select">
+          <img [src]="coinData.image.small" alt="{{coinData.name}}" width="32" height="32">
+          <span>{{coinData.symbol | uppercase}}</span>
+        </div>
+      </div>
+      <hr>
+      <div class="exchange-item">
+        <label>You Get</label>
+        <div class="img-select">
+          <img [src]="coinData.image.small" alt="{{coinData.name}}" width="32" height="32">
+          <span>{{coinData.symbol | uppercase}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ok">
+    <button type="button" class="btn btn-secondary">Exchange</button>
+  </div>
+</div>

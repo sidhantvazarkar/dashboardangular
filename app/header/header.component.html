@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="header-items">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class='bx bx-search'></i>
+    </div>
+    <div class="header-icons">
+      <a href="javascript:void(0);" (click)="toggleNotifications()"><i class='bx bx-bell'></i></a>
+      <a routerLink="/profile"><i class='bx bx-user' id="profile-icon"></i></a>
+    </div>
+    <div class="filter">
+      <mat-form-field class="currency-selector">
+        <mat-select (valueChange)="sendCurrency($event)" [(ngModel)]="selectedCurrency">
+          <mat-option value="INR">INR</mat-option>
+          <mat-option value="USD">USD</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,117 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.transactions-container {
+  padding: 20px;
+  background-color: #000000; /* Dark background */
+  border-radius: 8px;
+  color: white;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  min-width: 80px; /* Adjust the size as needed */
+  max-width: 100px; /* Ensure it fits in the line */
+  color: white;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-select {
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.mat-select-trigger {
+  padding: 4px 10px;
+}
+
+.transactions-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.details {
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+.coin {
+  font-weight: bold;
+}
+
+.type {
+  display: block;
+  color: gray;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.see-more {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.title {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 18px;
+  text-align: left;
+}
+::ng-deep
+.transactions-container[_ngcontent-ng-c2333228876] {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 8px;
+  color: white;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<div class="wrapper" [class.sidebar-closed]="isSidebarClosed">
+  <app-side-nav (sidebarToggle)="toggleSidebar()"></app-side-nav>
+  <div class="main-content" [ngClass]="{'sidebar-closed': isSidebarClosed}">
+    <div>
+      <router-outlet></router-outlet>
+      <app-background/>
+    </div>
+  </div>
+</div>
+
+<app-notification></app-notification>
+
+

@@ -1,0 +1,13 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: right;
+  border-top-left-radius: 10px; /* Optional: to make it look nicer */
+  z-index: 1000;
+  height: 91.8%;
+  width: 250px;
+}

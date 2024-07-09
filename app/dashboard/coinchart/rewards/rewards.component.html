@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="content">
+    <div class="title">Rewards</div>
+
+    <div class="reward-item" *ngFor="let reward of rewards; let i = index">
+      <label class="container">
+        <input type="checkbox" [(ngModel)]="reward.checked">
+        <svg viewBox="0 0 64 64" height="2em" width="2em">
+          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+        </svg>
+        <p>
+          <a href="#" (click)="checkReward(i, $event)">{{ reward.description }}</a>
+        </p>
+        <hr>
+      </label>
+      <span>{{ reward.bonus }}</span>
+      <ng-container *ngIf="reward.checked">
+        <app-refer *ngIf="i === 0"></app-refer>
+        <app-buy-page *ngIf="i === 1 || i === 2"></app-buy-page>
+      </ng-container>
+    </div>
+  </div>
+  <app-button (click)="handleButtonClick()" class="button" [disabled]="!allChecked()" [text]="'Unlock Rewards'"></app-button>
+</div>

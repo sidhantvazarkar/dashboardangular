@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  margin-left: 60px;
+  transition: margin-right 0.2s ease;
+
+}
+
+.sidebar-closed {
+  margin-left: 110px; /* Adjust the width of your sidebar */
+}
+
+.main-content {
+  flex: 2;
+  overflow: auto;
+  transition: margin-right 0.3s ease;
+}
+
+

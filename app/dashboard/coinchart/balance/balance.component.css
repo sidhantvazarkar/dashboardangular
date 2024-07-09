@@ -1,0 +1,123 @@
+.balance-card {
+  background: #000000;
+  border-radius: 15px;
+  padding: 50px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.balance-header {
+  flex-direction: column;
+}
+
+.balance-header h1, .balance-header h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.balance-exchange {
+  background: #242424;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.exchange-rates span {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.exchange-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.exchange-item {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.exchange-item label {
+  margin: 0;
+  color: #ffffff;
+}
+
+.img-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-select img {
+  margin-right: 8px;
+}
+
+.exchange-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+
+.exchange-icon i {
+  font-size: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.btn.btn-secondary {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color:  #695CFE;
+  color: white;
+  font-size: 0.8em;
+  border: 1px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .balance-card {
+    width: 100%;
+  }
+
+  .exchange-form {
+    flex-direction: column;
+  }
+
+  .exchange-icon {
+    margin: 16px 0;
+  }
+}
+
+::ng-deep .exchange-item[_ngcontent-ng-c1759838280] label[_ngcontent-ng-c1759838280] {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+
+::ng-deep .balance-exchange[_ngcontent-ng-c1759838280] {
+  background: #242424;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 90px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center container horizontally */
+  padding: 20px; /* Add padding for space around content */
+  width: 80vw; /* Adjust width to take up a significant portion of the screen */
+  max-width: 1200px; /* Set a maximum width if needed */
+  height: 80vh; /* Adjust height to take up a significant portion of the screen */
+}
+
+.card-wrapper {
+  width: 250px; /* Adjust width as needed */
+  height: 154px; /* Adjust height as needed */
+  margin: 10px; /* Space between cards */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px; /* Space between card section and button */
+}
+
+app-button {
+  width: 200px; /* Increase width for better visibility */
+  height: 0px; /* Increase height for better visibility */
+  margin: 10px; /* Space around button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

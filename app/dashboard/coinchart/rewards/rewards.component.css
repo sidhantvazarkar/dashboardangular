@@ -1,0 +1,134 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+  margin: 0;
+  text-align: left;
+  box-shadow: 0 10px 15px -3px #fff, 0 4px 6px -4px #fff;
+  border-radius: 8px;
+  background: #000000; /* Dark background color */
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.reward-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.reward-item p {
+  margin: 0;
+  color: #695CFE;
+}
+
+.reward-item span {
+  color: #695CFE;
+  font-size: 12px;
+}
+
+.reward-item input {
+  margin-right: 8px;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.container input {
+  display: none;
+}
+
+.container svg {
+  margin-right: 8px;
+}
+
+.path {
+  fill: none;
+  stroke: #695CFE;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.container input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+.hr
+{
+  color: #695CFE;;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+::ng-deep .container[_ngcontent-ng-c4222244467] {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.button{
+  margin-left: 60px;
+}
+
+.button {
+    font-size: 1em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+    width: 40%;
+}
+
+::ng-deep.text[_ngcontent-ng-c3005283923] {
+  translate: 2% -6%;
+  letter-spacing: 0.01ch;
+  background: linear-gradient(90deg, hsl(0 0% calc((0 * 100%) + 65%)), hsl(0 0% calc((0 * 100%) + 26%)));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background var(--transition);
+  width: 320px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}

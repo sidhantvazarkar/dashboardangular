@@ -1,0 +1,28 @@
+<div class="sign">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <p class="title">Add Card </p>
+    <p class="message">Add Card for seamless transaction </p>
+    <div class="flex">
+      <label>
+        <input class="input" type="text" [(ngModel)]="cardNumber" name="number" placeholder="Card Number" required>
+        <span>Card Number</span>
+      </label>
+    </div>
+
+    <label>
+      <input class="input" type="text" [(ngModel)]="cardHolder" name="name" placeholder="Enter Holder Name" required>
+      <span>Card Holder</span>
+    </label>
+
+    <label>
+      <input class="input" type="text" [(ngModel)]="cardCvv" name="cvv" placeholder="Enter CVV" required>
+      <span>CVV</span>
+    </label>
+    <label>
+      <input class="input" type="month" [(ngModel)]="cardDate" name="date" placeholder="Enter Card Validity" required>
+      <span>Card Validity</span>
+    </label>
+    <button class="submit">Submit</button>
+  </form>
+</div>
+

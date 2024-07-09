@@ -1,0 +1,112 @@
+/* Common tile styling */
+/* Common tile styling */
+*{
+  background-color: rgb(0, 0, 0);
+}
+.grid-container {
+  padding-top: 16px; /* Adjust the top padding as needed */
+  padding-left: 20px; /* Optional: Add padding on the left */
+  padding-right: 16px; /* Optional: Add padding on the right */
+  padding-bottom: 16px; /* Optional: Add padding on the bottom */
+}
+mat-grid-tile {
+  background: transparent; /* Set the background color for the tiles */
+  border-radius: 10px; /* Optional: Rounded corners for the tiles */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for the tiles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 8px;/* Optional: Padding inside the tiles */
+}
+
+/* Individual styles for each tile */
+.map-tile {
+
+  padding-bottom: 0px;
+  padding-top: 10;
+  padding-right: 10;
+  height: 50%;
+
+}
+
+.balance-tile {
+  background: #0c0c0c; /* Specific background color for balance tile */
+}
+
+.rewards-tile {
+  background: transparent; /* Specific background color for rewards tile */
+}
+
+.transactions-tile {
+  background: transparent;
+}
+
+.mat-grid-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.rewards-tile {
+  padding: 10px;
+  height:60%;
+  width: 100%;
+
+}
+
+
+
+.transactions-tile {
+  padding: 10px;
+  height: 60%;
+  width: 100%;
+}
+
+.ai-tips-tile {
+  padding: 10px;
+  height: 40%;
+  width: 100%;
+}
+
+mat-grid-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-grid-tile.transactions-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+
+.full-grid-tile {
+  padding: 10px;
+}
+
+.full-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+
+.mat-grid-list { /* Full viewport height */
+  width: 93vw;
+  justify-content: center;/* Full viewport width */
+}
+
+.mat-grid-tile {
+  padding: 0;
+}
+
+.transactions-tile {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+

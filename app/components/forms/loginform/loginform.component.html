@@ -1,0 +1,34 @@
+
+<div class="sign">
+  <div class="signup">
+    <h1>New User?</h1>
+    <form class="form" #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get full access to our app.</p>
+      <div class="flex">
+        <label>
+          <input class="input" type="text" ngModel name="fname" placeholder="Enter First Name" required>
+          <span>Firstname</span>
+        </label>
+        <label>
+          <input class="input" type="text" ngModel name="lname" placeholder="Enter Last name" required>
+          <span>Lastname</span>
+        </label>
+      </div>
+      <label>
+        <input class="input" type="email" ngModel name="email" placeholder="Enter Email" required>
+        <span>Email</span>
+      </label>
+      <label>
+        <input class="input" type="password" ngModel name="password" placeholder="Enter Password" required>
+        <span>Password</span>
+      </label>
+      <label>
+        <input class="input" type="password" ngModel name="cpassword" placeholder="Confirm Your Password" required>
+        <span>Confirm password</span>
+      </label>
+      <button class="submit">Submit</button>
+      <p class="signin">Already have an account? <a routerLink="/login">Signin</a></p>
+    </form>
+  </div>
+</div>

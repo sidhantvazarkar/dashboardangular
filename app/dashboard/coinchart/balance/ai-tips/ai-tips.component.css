@@ -1,0 +1,74 @@
+:host {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  z-index: 2; /* Ensure it is above the gradient */
+}
+
+.card .tip {
+  z-index: 3; /* Ensure it is above the gradient */
+  color: white;
+  font-size: 2em;
+  margin-bottom: 10px; /* Adjust margin as needed */
+  text-align: left; /* Align heading to the left */
+  width: 100%;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #000000;
+  inset: 5px;
+  border-radius: 20px;
+  z-index: 2; /* Ensure it is above the gradient but behind the content */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 3; /* Ensure it is above the gradient and after element */
+  width: 100%;
+  flex-grow: 1; /* Allow ul to grow and take up remaining space */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+li {
+  position: relative; /* Ensure pseudo-element positioning is relative to li */
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Increase font size */
+  text-align: justify;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white; /* Adjust text color as needed */
+  padding-left: 30px; /* Make room for the bullet */
+}
+
+li::before {
+  content: '•'; /* Use a bullet character */
+  position: absolute;
+  left: 10px; /* Position bullet to the left */
+  color: white; /* Adjust bullet color as needed */
+  font-size: 1.5em; /* Adjust bullet size */
+  top: 50%;
+  transform: translateY(-50%); /* Center bullet vertically */
+}

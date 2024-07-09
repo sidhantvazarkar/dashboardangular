@@ -1,0 +1,16 @@
+<div class="notification-panel" *ngIf="isVisible">
+  <div class="notification-header">
+    <h3>Notifications</h3>
+    <button class="button" (click)="closePanel()">X</button>
+  </div>
+  <div class="notification-list">
+    <div class="notification-item" *ngFor="let notification of notifications">
+      <img [src]="notification.icon" alt="icon" class="notification-icon">
+      <div class="notification-content">
+        <p>{{ notification.title }}</p>
+        <span>{{ notification.time }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,124 @@
+.header {
+  height: 40%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 3.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.0083em;
+}
+
+.h6 {
+  color: darkgrey;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: -0.00714em;
+}
+
+.banner {
+  background-image: url('../../assets/banner2\ \(1\).jpg');
+  height: 400px;
+  width: 100%;
+}
+
+.sub-header {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card {
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  margin: 0 20px; /* Adjusted margin to fit in a row */
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 70px;
+  margin: 0 auto 10px;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-text {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+:host ::ng-deep .mat-sort-header-content {
+  color: #020202;
+}
+
+:host ::ng-deep .mat-paginator-outer-container {
+  background-color: rgb(36, 37, 37);
+}
+
+::ng-deep tr.mat-header-row {
+  background-color: #009688;
+  color: white; /* Ensuring header text color is readable */
+}
+
+:host ::ng-deep tr.mat-row {
+  height: 70px;
+  background-color: white; /* Changed background color to white */
+  color: black; /* Ensuring text color is black */
+}
+
+:host ::ng-deep tr.mat-row:hover {
+  background-color: #f1f1f1; /* Background color on hover */
+}
+
+:host ::ng-deep td,
+:host ::ng-deep th {
+  color: black; /* Ensuring text color in cells is black */
+}
+
+:host ::ng-deep td:first-child,
+:host ::ng-deep th:first-child {
+  background-color: #fff; /* Background color for the first column */
+  color: #020202; /* Text color for the first column */
+}
+
+
+:host ::ng-deep.body {
+  color: #333;
+  background-color: #000;
+}

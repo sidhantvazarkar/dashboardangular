@@ -1,0 +1,27 @@
+<div class="grid-container">
+  <mat-grid-list cols="3" rowHeight="290px" gutterSize="2px">
+    <mat-grid-tile colspan="2" rowspan="2" class="map-tile">
+      <div class="map-container">
+        <app-map [coinId]="coinId"></app-map>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2" class="balance-tile">
+      <app-balance [coinId]="coinId"></app-balance>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1" class="rewards-tile">
+      <app-rewards></app-rewards>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1" class="transactions-tile">
+      <app-transactions></app-transactions>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1" class="ai-tips-tile">
+      <app-ai-tips></app-ai-tips>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+
+
+
+
